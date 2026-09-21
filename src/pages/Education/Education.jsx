@@ -16,9 +16,9 @@ const EducationSection = () => {
   const educationData = [
     {
       degree: "Secondary School Certificate (SSC)",
-      school: "Tarlac Montessori School",
+      school: "Sulivan National Highschool",
       mascot: "📘",
-      year: "2015-2017",
+      year: "2013-2017",
       achievements: ["GPA: 4.89", "Subject: Science"],
       skills: ["Mathematics", "Physics", "Chemistry", "Biology"],
       description:
