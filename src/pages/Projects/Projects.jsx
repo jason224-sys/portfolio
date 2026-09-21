@@ -5,13 +5,13 @@ import PropTypes from "prop-types";
 
 const projects = [
   {
-    title: "Olova! A Lightweight JavaScript Library",
+    title: "Modern framework for GraphQL API",
     description:
-      "A lightweight JavaScript library for creating beautiful, responsive UI components.",
+      "Dependency injection support and decorators abstraction provides great separation of business logic from the underlying transport layer.",
     src: "rock.jpg",
     link: "https://res.cloudinary.com/skpz5si6/image/upload/f_auto,q_auto/graphql",
     color: "#5196fd",
-    githubLink: "https://i.postimg.cc/sfcrxLRC/graphql.png",
+    githubLink: "https://github.com/jason224-sys/graphql-endpoints",
     liveLink: "https://typegraphql.com/",
   },
   {
@@ -25,9 +25,9 @@ const projects = [
     liveLink: "https://codervai.vercel.app",
   },
   {
-    title: "🚀 CodeWhisperer",
+    title: "PimEyes",
     description:
-      "🚀 CodeWhisperer A powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, multi-language support, and a sleek UI. Start coding instantly! 💻✨",
+      "🚀 PimEyes leverages advanced face recognition technology to help you monitor your images, protect your privacy, and audit copyright usage across the entire internet. 💻✨",
     src: "water.jpg",
     link: "https://res.cloudinary.com/skpz5si6/image/upload/f_auto,q_auto/face-recog",
     color: "#fff",
@@ -35,9 +35,9 @@ const projects = [
     liveLink: "https://pimeyes.com/",
   },
   {
-    title: "CodeKori 🔥",
+    title: "Agent skills",
     description:
-      "CodeKori is a powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, multi-language support, and a sleek UI. Start coding instantly! 💻✨",
+      "🔥 A lightweight, open format for extending AI agent capabilities with specialized knowledge and workflows, which can bundle scripts, reference materials, templates, and other resources 💻✨",
     src: "house.jpg",
     link: "https://res.cloudinary.com/skpz5si6/image/upload/f_auto,q_auto/agent-skill",
     color: "#ed649e",

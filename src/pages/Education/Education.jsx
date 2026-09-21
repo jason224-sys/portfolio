@@ -16,7 +16,7 @@ const EducationSection = () => {
   const educationData = [
     {
       degree: "Secondary School Certificate (SSC)",
-      school: "Natore Textile Institute",
+      school: "Tarlac Montessori School",
       mascot: "📘",
       year: "2015-2017",
       achievements: ["GPA: 4.89", "Subject: Science"],
