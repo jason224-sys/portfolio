@@ -17,7 +17,7 @@ Welcome to my **portfolio website**! This site showcases my skills, experience, 
 
 ## Demo
 
-![Portfolio Demo](https://res.cloudinary.com/skpz5si6/image/upload/f_auto,q_auto/portfolio)
+![Portfolio Demo](https://res.cloudinary.com/skpz5si6/image/upload/v1789984735/portfolio.png)
 
 ---
 
