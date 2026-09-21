@@ -182,5 +182,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-<div align="center"> Made with ❤️ by John Philip </div>
+<div align="center"> Made with ❤️ by Jason Edward </div>
 
