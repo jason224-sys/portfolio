@@ -17,7 +17,7 @@ Welcome to my **portfolio website**! This site showcases my skills, experience, 
 
 ## Demo
 
-![Portfolio Demo](https://i.postimg.cc/Dfr5jCQp/Screenshot-2025-01-02-120901.png)
+![Portfolio Demo](https://res.cloudinary.com/skpz5si6/image/upload/f_auto,q_auto/portfolio)
 
 ---
 
@@ -29,43 +29,36 @@ Check out the live preview of the portfolio website here:
 ### 🎯 Project Structure
 ```bash
 portfolio/
-├── node_modules/
 ├── public/
+│   └── vite.svg
 ├── src/
 │   ├── assets/
 │   │   ├── css/
+│   │   │   ├── Header.css
 │   │   │   ├── index.css
 │   │   │   └── tomorrow.css
-│   │   └── images/
+│   │   ├── images/
+│   │   │   ├── favicon.ico
+│   │   │   └── logo.jpg
+│   │   └── react.svg
 │   ├── components/
+│   │   ├── AnimatedGrid.jsx
+│   │   ├── enhanced-portfolio-card.jsx
+│   │   ├── globe.jsx
 │   │   ├── ui/
-│   │   │   ├── Reusable Components/
-│   │   │   │   ├── badge.jsx
-│   │   │   │   ├── button.jsx
-│   │   │   │   ├── card.jsx
-│   │   │   │   ├── EducationLoader.jsx
-│   │   │   │   ├── evervault-card.jsx
-│   │   │   │   ├── flip-words.jsx
-│   │   │   │   ├── icon-cloud.jsx
-│   │   │   │   ├── meteors.jsx
-│   │   │   │   ├── sparkles-text.jsx
-│   │   │   │   └── tooltip.jsx
-│   │   │   │
-│   │   │   ├── Main Components/
-│   │   │   │   ├── AnimatedGrid.jsx
-│   │   │   │   ├── Contact.jsx
-│   │   │   │   ├── Education.jsx
-│   │   │   │   ├── enhanced-portfolio-card.jsx
-│   │   │   │   ├── Experience.jsx
-│   │   │   │   ├── global.jsx
-│   │   │   │   ├── Header.jsx
-│   │   │   │   ├── Hero.jsx
-│   │   │   │   ├── Home.jsx
-│   │   │   │   ├── PortfolioPage.jsx
-│   │   │   │   ├── Projects.jsx
-│   │   │   │   └── Skills.jsx
-│   │   └── lib/
-│   │       └── utils.js
+│   │   │   ├── badge.jsx
+│   │   │   ├── button.jsx
+│   │   │   ├── card.jsx
+│   │   │   ├── cool-mode.jsx
+│   │   │   ├── EducationLoader.jsx
+│   │   │   ├── evervault-card.jsx
+│   │   │   ├── flip-words.jsx
+│   │   │   ├── icon-cloud.jsx
+│   │   │   ├── meteors.jsx
+│   │   │   ├── sparkles-text.jsx
+│   │   │   └── tooltip.jsx
+│   ├── lib/
+│   │   └── utils.js
 │   ├── pages/
 │   │   ├── About/
 │   │   │   └── About.jsx
@@ -73,30 +66,30 @@ portfolio/
 │   │   │   └── Contact.jsx
 │   │   ├── Experience/
 │   │   │   └── Experience.jsx
+│   │   ├── Education/
+│   │   │   └── Education.jsx
 │   │   ├── Header/
 │   │   │   └── Header.jsx
 │   │   ├── Hero/
 │   │   │   └── Hero.jsx
 │   │   ├── Projects/
-│   │   │   ├── Projects.jsx
-│   │   │   └── testProjects.jsx
+│   │   │   └── Projects.jsx
 │   │   └── Skills/
 │   │       └── Skills.jsx
 │   ├── App.jsx
 │   └── main.jsx
-├── Configuration Files/
-│   ├── .eslintrc.js
-│   ├── .gitignore
-│   ├── components.json
-│   ├── index.html
-│   ├── jsconfig.json
-│   ├── package-lock.json
-│   ├── package.json
-│   ├── postcss.config.js
-│   ├── README.md
-│   ├── tailwind.config.js
-│   ├── vercel.json
-│   └── vite.config.js
+├── .gitignore
+├── components.json
+├── eslint.config.js
+├── index.html
+├── jsconfig.json
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── README.md
+├── tailwind.config.js
+├── vercel.json
+└── vite.config.js
 
 ```
 ---
@@ -151,7 +144,7 @@ You will need to download **Git** and **Node** to run this project.
 2. After forking, open your terminal and run the following commands to clone the repo:
 
   ```bash
-  git clone https://github.com/seraprogrammer/portfolio.git
+  git clone https://github.com/jason224-sys/portfolio
   ```
 Navigate to the Project Directory 📂
 Once the repository is cloned, change your directory to the project folder:
@@ -189,5 +182,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-<div align="center"> Made with ❤️ by Nazmul Hossain </div>
+<div align="center"> Made with ❤️ by John Philip </div>
 

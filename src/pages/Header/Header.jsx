@@ -1,48 +1,73 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   FaHome,
   FaLaptopCode,
-  FaUser,
   FaBriefcase,
   FaGraduationCap,
   FaCode,
   FaEnvelope,
   FaBars,
 } from "react-icons/fa";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 export default function Header() {
   const location = useLocation();
   const [activeLink, setActiveLink] = useState(() => {
-    const path = location.pathname.substring(1) || "home";
-    return path;
+    return location.hash.substring(1) || "home";
   });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    setActiveLink(location.hash.substring(1) || "home");
+  }, [location.hash]);
 
   useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    const updateActiveLink = () => {
+      const sectionIds = [
+        "home",
+        "skills",
+        "experience",
+        "education",
+        "projects",
+        "contact",
+      ];
+      const readingLine = window.innerHeight * 0.35;
+      const currentSection = sectionIds
+        .map((id) => document.getElementById(id))
+        .filter((section) => section && section.getBoundingClientRect().top <= readingLine)
+        .pop();
+
+      if (currentSection) {
+        setActiveLink(currentSection.id);
+      }
+    };
+
+    updateActiveLink();
+    window.addEventListener("scroll", updateActiveLink, { passive: true });
+    window.addEventListener("resize", updateActiveLink);
+
+    return () => {
+      window.removeEventListener("scroll", updateActiveLink);
+      window.removeEventListener("resize", updateActiveLink);
+    };
   }, []);
 
   const navLinks = [
-    { id: "home", icon: FaHome, text: "Home", path: "/" },
-    { id: "skills", icon: FaCode, text: "Skills", path: "/skills" },
-    {
-      id: "experience",
-      icon: FaBriefcase,
-      text: "Experience",
-      path: "/experience",
-    },
+    { id: "home", icon: FaHome, text: "Home", path: "#home" },
     {
       id: "education",
       icon: FaGraduationCap,
       text: "Education",
-      path: "/education",
+      path: "#education",
     },
-    { id: "projects", icon: FaLaptopCode, text: "Projects", path: "/projects" },
-    { id: "contact", icon: FaEnvelope, text: "Contact", path: "/contact" },
+    {
+      id: "experience",
+      icon: FaBriefcase,
+      text: "Experience",
+      path: "#experience",
+    },
+    { id: "skills", icon: FaCode, text: "Skills", path: "#skills" },
+    { id: "projects", icon: FaLaptopCode, text: "Projects", path: "#projects" },
+    { id: "contact", icon: FaEnvelope, text: "Contact", path: "#contact" },
   ];
 
   return (
@@ -52,7 +77,7 @@ export default function Header() {
           <nav className="bg-gray-900/90 backdrop-blur-md md:rounded-full px-4 md:px-6 py-2.5">
             {/* Mobile Menu Button */}
             <div className="flex justify-between items-center md:hidden px-2">
-              <Link to="/" className="text-white font-bold">Portfolio</Link>
+              <a href="#home" className="text-white font-bold">Portfolio</a>
               <button 
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="text-white p-2"
@@ -65,13 +90,14 @@ export default function Header() {
             <div className={`${isMenuOpen ? 'block' : 'hidden'} md:block`}>
               <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-1 lg:gap-2 py-4 md:py-0">
                 {navLinks.map(({ id, icon: Icon, text, path }) => (
-                  <Link
+                  <a
                     key={id}
-                    to={path}
+                    href={path}
                     onClick={() => {
                       setActiveLink(id);
                       setIsMenuOpen(false);
                     }}
+                    aria-current={activeLink === id ? "page" : undefined}
                     className={`px-3 py-2 md:py-1.5 rounded-lg md:rounded-full text-sm font-medium
                       transition-all duration-300 flex items-center gap-2
                       hover:bg-white/10 
@@ -88,7 +114,7 @@ export default function Header() {
                       }`}
                     />
                     <span className="inline">{text}</span>
-                  </Link>
+                  </a>
                 ))}
               </div>
             </div>
@@ -113,3 +139,4 @@ export default function Header() {
     </header>
   );
 }
+

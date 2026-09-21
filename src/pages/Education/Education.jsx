@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import EducationLoader from "@/components/ui/EducationLoader";
+// import EducationLoader from "@/components/ui/EducationLoader";
 import {
   Star,
   Award,
   Calendar,
   BookOpen,
-  GraduationCap,
+  // GraduationCap,
   Trophy,
 } from "lucide-react";
 import { motion } from "framer-motion";
@@ -18,7 +18,7 @@ const EducationSection = () => {
       degree: "Secondary School Certificate (SSC)",
       school: "Natore Textile Institute",
       mascot: "📘",
-      year: "2019-2021",
+      year: "2015-2017",
       achievements: ["GPA: 4.89", "Subject: Science"],
       skills: ["Mathematics", "Physics", "Chemistry", "Biology"],
       description:
@@ -26,13 +26,13 @@ const EducationSection = () => {
     },
     {
       degree: "Higher Secondary Certificate (HSC)",
-      school: "Dottopara Model Degree College",
+      school: "Baliwag Polytechnic College",
       mascot: "📗",
-      year: "2021-2023",
-      achievements: ["GPA: 4.25", "Subject: Arts"],
-      skills: ["Literature", "Social Studies", "Economics", "History"],
+      year: "2013-2017",
+      achievements: ["GPA: 4.25", "Subject: Computer Science"],
+      skills: ["Mathematics", "Social Studies", "Economics", "Data Analysis"],
       description:
-        "Developed strong analytical and critical thinking skills through comprehensive study of humanities and social sciences.",
+        "Bachelor of Science in Information Technology",
     },
   ];
 
