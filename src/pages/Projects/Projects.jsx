@@ -22,7 +22,7 @@ const projects = [
     link: "https://res.cloudinary.com/skpz5si6/image/upload/f_auto,q_auto/portfolio",
     color: "#8f89ff",
     githubLink: "https://github.com/jason224-sys/portfolio",
-    liveLink: "https://codervai.vercel.app",
+    liveLink: "https://portfolio-axlw6fq4x-jason2241991-1747.vercel.app/",
   },
   {
     title: "PimEyes",
