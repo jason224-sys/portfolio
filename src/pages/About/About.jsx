@@ -1,4 +1,4 @@
-import HeroImg from "@/assets/images/logo.jpg";
+// import HeroImg from "@/assets/images/logo.jpg";
 // import OlovaLogo from "@/assets/images/olova.png";
 
 export default function About() {
@@ -13,7 +13,8 @@ export default function About() {
             <div className="relative mb-6 sm:mb-0">
               <div className="bg-linear-to-b aspect-76/59 relative rounded-2xl p-px from-zinc-300 to-transparent">
                 <img
-                  src={HeroImg}
+                  // src={HeroImg}
+                  src="https://res.cloudinary.com/skpz5si6/image/upload/v1790231791/myavatar.jpg"
                   className="rounded-[15px] shadow block"
                   alt="payments illustration"
                   width={1207}
