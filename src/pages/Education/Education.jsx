@@ -18,7 +18,7 @@ const EducationSection = () => {
       degree: "Secondary School Certificate (SSC)",
       school: "Sulivan National Highschool",
       mascot: "📘",
-      year: "2013-2017",
+      year: "2007-2011",
       achievements: ["GPA: 4.89", "Subject: Science"],
       skills: ["Mathematics", "Physics", "Chemistry", "Biology"],
       description:
@@ -26,9 +26,9 @@ const EducationSection = () => {
     },
     {
       degree: "Higher Secondary Certificate (HSC)",
-      school: "Baliwag Polytechnic College",
+      school: "Uniervisity of Luzon",
       mascot: "📗",
-      year: "2013-2017",
+      year: "2011-2015",
       achievements: ["GPA: 4.25", "Subject: Computer Science"],
       skills: ["Mathematics", "Social Studies", "Economics", "Data Analysis"],
       description:
