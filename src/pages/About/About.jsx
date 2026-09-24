@@ -14,7 +14,7 @@ export default function About() {
               <div className="bg-linear-to-b aspect-76/59 relative rounded-2xl p-px from-zinc-300 to-transparent">
                 <img
                   // src={HeroImg}
-                  src="https://res.cloudinary.com/skpz5si6/image/upload/v1790231791/myavatar.jpg"
+                  src="https://res.cloudinary.com/skpz5si6/image/upload/v1790249606/avatar.jpg"
                   className="rounded-[15px] shadow block"
                   alt="payments illustration"
                   width={1207}
