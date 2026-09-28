@@ -44,7 +44,7 @@ export default function Hero() {
   const words = [
     "MARN Stack Expert & Cloud Enthusiast",
     "Full-Stack Developer & UI/UX Enthusiast",
-    "AI Enthusiast & Open Source Contributor",
+    "AI Enthusiast & Cybersecurity profession",
     "Linux & GitHub for DevOps Enthusiast",
   ];
 
@@ -53,7 +53,7 @@ const profile = {
     name: 'Jason Edward',
     title: 'Full-Stack Developer | Cloud Enthusiast | Problem Solver',
     skills: [
-        'React', 'NextJS', 'Redux', 'Express',
+        'React', 'NextJS', 'Redux', 'Express', 'Cybersecurity',
         'MySQL', 'MongoDB', 'Docker', 'AWS', 'TypeScript',
         'GraphQL', 'Git', 'Linux', 'Discord Development'
     ],
