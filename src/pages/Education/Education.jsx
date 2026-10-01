@@ -26,7 +26,7 @@ const EducationSection = () => {
     },
     {
       degree: "Higher Secondary Certificate (HSC)",
-      school: "Uniervisity of Luzon",
+      school: "Univerisity of Luzon",
       mascot: "📗",
       year: "2011-2015",
       achievements: ["GPA: 4.25", "Subject: Computer Science"],
