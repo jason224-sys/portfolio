@@ -19,14 +19,14 @@ const EducationSection = () => {
       school: "Sulivan National Highschool",
       mascot: "📘",
       year: "2007-2011",
-      achievements: ["GPA: 4.89", "Subject: Science"],
+      achievements: ["GPA: 4.15", "Subject: Science"],
       skills: ["Mathematics", "Physics", "Chemistry", "Biology"],
       description:
         "Focused on core science subjects with emphasis on practical laboratory work and scientific research methodologies.",
     },
     {
       degree: "Higher Secondary Certificate (HSC)",
-      school: "University of Luzon",
+      school: "Baliwag Polytechnic College",
       mascot: "📗",
       year: "2011-2015",
       achievements: ["GPA: 4.25", "Subject: Computer Science"],

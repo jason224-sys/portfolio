@@ -50,12 +50,12 @@ export default function Hero() {
 
   const [code] = useState(`
 const profile = {
-    name: 'Jason Edward',
+    name: 'John Philip',
     title: 'Full-Stack Developer | Cloud Enthusiast | Problem Solver',
     skills: [
-        'React', 'NextJS', 'Redux', 'Express', 'Cybersecurity',
-        'MySQL', 'MongoDB', 'Docker', 'AWS', 'TypeScript',
-        'GraphQL', 'Git', 'Linux', 'Discord Development'
+        'React', 'NextJS', 'Flutter', 'Express', 'Cybersecurity',
+        'MySQL', 'MongoDB', 'Java(Android)', 'AWS', 'TypeScript',
+        'GraphQL', 'Git', 'Linux', 'React Native'
     ],
     hardWorker: true,
     quickLearner: true,
@@ -190,7 +190,7 @@ const profile = {
                     I&apos;m
                     <span className="typing-effect gradient-text">
                       {" "}
-                      Jason Edward
+                      John Philip
                     </span>
                   </span>
                 </h1>
@@ -220,7 +220,7 @@ const profile = {
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 animate__animated animate__fadeInUp animate__delay-2s">
                 {/* View Projects Button */}
                 <a
-                  href="https://github.com/jason224-sys"
+                  href="https://github.com/jphp971-sys"
                   className="group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-blue-500 to-teal-400 p-0.5 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
                 >
                   <span className="block w-full px-6 sm:px-8 py-3 sm:py-4 rounded-[11px] bg-gray-900 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-teal-400">
@@ -233,7 +233,7 @@ const profile = {
 
                 {/* Contact Button */}
                 <a
-                  href="/Jason Edward.pdf"
+                  href="/John_Philip.pdf"
                   className="group relative inline-flex items-center justify-center gap-3 p-0.5 rounded-xl bg-gradient-to-r from-gray-800 to-gray-700 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
                 >
                   <span className="block w-full px-6 sm:px-8 py-3 sm:py-4 rounded-[11px] bg-gray-900 border border-gray-700/50 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-gray-800 group-hover:to-gray-700">

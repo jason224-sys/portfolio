@@ -14,7 +14,7 @@ export default function About() {
               <div className="bg-linear-to-b aspect-76/59 relative rounded-2xl p-px from-zinc-300 to-transparent">
                 <img
                   // src={HeroImg}
-                  src="https://res.cloudinary.com/skpz5si6/image/upload/v1791902317/mingshan.jpg"
+                  src="/John Philip.jpg"
                   className="rounded-[15px] shadow block"
                   alt="payments illustration"
                   width={1207}
@@ -25,7 +25,7 @@ export default function About() {
 
             <div className="relative space-y-4">
               <p className="text-white">
-                Hello! I'm Jason Edward, a passionate JavaScript developer
+                Hello! I'm John Philip, a passionate JavaScript developer
                 specializing in creating innovative web solutions and
                 user-friendly interfaces,
                 and am dedicated to simplifying development workflows.
@@ -49,7 +49,7 @@ export default function About() {
 
                   <div className="mt-6 space-y-3">
                     <cite className="block font-medium text-white">
-                      Jason Edward
+                      John Philip
                     </cite>
                   </div>
                 </blockquote>
