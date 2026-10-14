@@ -11,7 +11,7 @@ const projects = [
     src: "rock.jpg",
     link: "https://res.cloudinary.com/skpz5si6/image/upload/f_auto,q_auto/graphql",
     color: "#5196fd",
-    githubLink: "https://github.com/jason224-sys/graphql-endpoints",
+    githubLink: "/",
     liveLink: "https://typegraphql.com/",
   },
   {
@@ -21,7 +21,7 @@ const projects = [
     src: "tree.jpg",
     link: "https://res.cloudinary.com/skpz5si6/image/upload/v1789984735/portfolio.png",
     color: "#8f89ff",
-    githubLink: "https://github.com/jason224-sys/portfolio",
+    githubLink: "https://github.com/jphp971-sys/portfolio",
     liveLink: "https://portfolio-eight-iota-km2647b6de.vercel.app",
   },
   {
@@ -31,7 +31,7 @@ const projects = [
     src: "water.jpg",
     link: "https://res.cloudinary.com/skpz5si6/image/upload/f_auto,q_auto/face-recog",
     color: "#fff",
-    githubLink: "https://github.com/jason224-sys/scrapper",
+    githubLink: "/",
     liveLink: "https://pimeyes.com/",
   },
   {
@@ -41,7 +41,7 @@ const projects = [
     src: "house.jpg",
     link: "https://res.cloudinary.com/skpz5si6/image/upload/f_auto,q_auto/agent-skill",
     color: "#ed649e",
-    githubLink: "https://github.com/jason224-sys/skills-specification",
+    githubLink: "/",
     liveLink: "https://agentskills.io/specification",
   },
 ];
@@ -99,7 +99,7 @@ export default function Projects() {
 
   return (
     <ReactLenis root>
-      <main className="bg-black" ref={container}>
+      <main className="relative bg-black" ref={container}>
         <section className="text-white w-full bg-slate-950">
           {projects.map((project, i) => {
             const targetScale = 1 - (projects.length - i) * 0.05;
@@ -139,6 +139,26 @@ function Card({
 }) {
   const container = useRef(null);
   const scale = useTransform(progress, range, [1, targetScale]);
+  const githubIcon = (
+    <>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="22"
+        height="22"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke={color}
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+      </svg>
+      <span className="text-xs md:text-sm font-medium" style={{ color }}>
+        Code
+      </span>
+    </>
+  );
 
   return (
     <div
@@ -209,35 +229,20 @@ function Card({
               <div className="w-full h-[1px] bg-gray-800 mb-4 md:mb-6" />
 
               <div className="flex items-center gap-4">
-                {/* GitHub Link */}
-                <motion.a
-                  href={githubLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex items-center gap-2"
-                  whileHover={{ y: -3 }}
-                  transition={{ type: "spring", stiffness: 400 }}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="22"
-                    height="22"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke={color}
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
+                {githubLink === "/" ? (
+                  <></>
+                ) : (
+                  <motion.a
+                    href={githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center gap-2"
+                    whileHover={{ y: -3 }}
+                    transition={{ type: "spring", stiffness: 400 }}
                   >
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                  </svg>
-                  <span
-                    className="text-xs md:text-sm font-medium"
-                    style={{ color }}
-                  >
-                    Code
-                  </span>
-                </motion.a>
+                    {githubIcon}
+                  </motion.a>
+                )}
 
                 {/* Live Link */}
                 <motion.a
