@@ -5,8 +5,6 @@ import IconCloudDemo from "@/components/globe";
 import { Code2, Paintbrush, Database, Layout, Cpu, Cloud } from "lucide-react";
 import {
   FaReact,
-  // FaFlutter,
-  FaAndroid,
   FaNodeJs,
   FaPython,
   FaDocker,
@@ -14,7 +12,6 @@ import {
   FaLinux,
   FaFigma,
   FaAws,
-  FaMobile,
 } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -75,11 +72,26 @@ const SkillsSection = () => {
       color: "text-blue-400",
       skills: [
         { name: "React", icon: <FaReact className="w-4 h-4 text-[#61DAFB]" /> },
-        { name: "React Native", icon: <FaReact className="w-4 h-4 text-[#61DAFB]" /> },
-        { name: "Android Development", icon: <FaAndroid className="w-4 h-4 text-[#3DDC84]" /> },
-        { name: "Mobile", icon: <FaMobile className="w-4 h-4 text-[#61DAFB]" /> },
-        { name: "Next.js", icon: <SiNextdotjs className="w-4 h-4 text-white" /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="w-4 h-4 text-[#38B2AC]" /> },
+        {
+          name: "Next.js",
+          icon: <SiNextdotjs className="w-4 h-4 text-white" />,
+        },
+        {
+          name: "TypeScript",
+          icon: <SiTypescript className="w-4 h-4 text-[#3178C6]" />,
+        },
+        {
+          name: "Tailwind CSS",
+          icon: <SiTailwindcss className="w-4 h-4 text-[#38B2AC]" />,
+        },
+        {
+          name: "HTML5",
+          icon: <BsFileEarmarkCode className="w-4 h-4 text-[#E34F26]" />,
+        },
+        {
+          name: "CSS3",
+          icon: <BsFileEarmarkCode className="w-4 h-4 text-[#1572B6]" />,
+        },
       ],
     },
     {

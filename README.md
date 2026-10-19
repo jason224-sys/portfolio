@@ -144,7 +144,7 @@ You will need to download **Git** and **Node** to run this project.
 2. After forking, open your terminal and run the following commands to clone the repo:
 
   ```bash
-  git clone https://github.com/jphp971-sys/portfolio
+  git clone https://github.com/jason224-sys/portfolio
   ```
 Navigate to the Project Directory 📂
 Once the repository is cloned, change your directory to the project folder:
@@ -182,5 +182,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-<div align="center"> Made with ❤️ by John Philip </div>
+<div align="center"> Made with ❤️ by Jason Edward </div>
 
