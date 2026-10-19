@@ -221,7 +221,7 @@ const SkillsSection = () => {
           ))}
         </div>
       </section>
-      <style>{`
+      <style jsx>{`
         @keyframes shimmer {
           0% {
             transform: translateX(-100%);
